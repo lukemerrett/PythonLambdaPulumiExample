@@ -1,4 +1,4 @@
-name: Python Lambda Pulumi Example
+name: python-lambda-pulumi-example
 runtime:
   name: python
 description: A minimal AWS Python Pulumi program
