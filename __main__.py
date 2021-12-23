@@ -2,7 +2,10 @@ import json
 import pulumi
 import pulumi_aws as aws
 
-bucket = aws.s3.Bucket("bucket-writer-sample")
+bucket = aws.s3.Bucket(
+    "bucket-writer-sample",
+    force_destroy=True  # Allows deletion even if objects exist in the bucket
+)
 
 access_bucket_policy = aws.iam.Policy(
     "access_bucket_policy",
