@@ -10,9 +10,11 @@ Each of these need to be installed and available on your path:
 * [Python 3.8+](https://www.python.org/downloads/)
 * [AWS CLI](https://aws.amazon.com/cli/)
 
-The Python packages you'll need are:
+Install the required Python packages using:
 
-* [boto3](https://pypi.org/project/boto3/)
+```shell
+pip install -r requirements.txt
+```
 
 You'll also need to set up you local AWS credentials to be able to deploy and test the Lambda. Use this to start the wizard to set up your default local credentials:
 

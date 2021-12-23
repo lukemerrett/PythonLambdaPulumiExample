@@ -133,5 +133,6 @@ dmypy.json
 .vscode/
 
 # Project specific
+*.pyc
 package.zip
 test_response.txt
