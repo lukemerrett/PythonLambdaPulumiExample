@@ -1,4 +1,4 @@
 name: python-lambda-pulumi-example
 runtime:
   name: python
-description: A minimal AWS Python Pulumi program
+description: Playing with how to set up a Python AWS Lambda using Pulumi that can talk to S3
