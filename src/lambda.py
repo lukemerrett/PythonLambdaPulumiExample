@@ -2,12 +2,12 @@
 Handler for the events received by the Lambda
 """
 
-import json
 import boto3
 import datetime
+import json
+import os
 
-
-BUCKET_NAME = "bucket-writer-sample"
+BUCKET_NAME = os.environ["BUCKET_NAME"]
 
 
 def get_timestamp_filename():

@@ -38,6 +38,8 @@ It will confirm with you which resources are being deployed, and ask for confirm
 
 Run the following command to send test data to the Lambda to check it is functioning
 
+Beforehand you need to replace the `bucket_writer` function name below with the generated function name Pulumi creates (e.g: `bucket_writer-e3a935d`)
+
 ```shell
 aws lambda invoke --function-name bucket_writer --region eu-west-1 --payload '{\"key1\":\"value1\", \"key2\":\"value2\", \"key3\":\"value3\"}' --cli-binary-format raw-in-base64-out test_response.txt
 ```
@@ -57,3 +59,4 @@ pulumi destroy
 
 * [Pulumi Get Started with AWS](https://www.pulumi.com/docs/get-started/aws/)
 * [Writing a JSON file to an S3 bucket](https://stackoverflow.com/questions/46844263/writing-json-to-file-in-s3-bucket)
+* [Pulumi AWS API Reference](https://www.pulumi.com/registry/packages/aws/api-docs/)
