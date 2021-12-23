@@ -1,6 +1,4 @@
-name: quickstart
+name: Python Lambda Pulumi Example
 runtime:
   name: python
-  options:
-    virtualenv: venv
 description: A minimal AWS Python Pulumi program
