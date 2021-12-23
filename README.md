@@ -22,11 +22,17 @@ You'll also need to set up you local AWS credentials to be able to deploy and te
 aws configure
 ```
 
-- [ ] Any other Pulumi pre-requisites?
-
 ## Deployment
 
-- [ ] Deploying with Pulumi
+To create these resources in AWS run:
+
+```shell
+pulumi up
+```
+
+This is configured to use your your default AWS profile to deploy the resources to eu-west-1 (Ireland)
+
+It will confirm with you which resources are being deployed, and ask for confirmation before continuing
 
 ## Testing the Lambda
 
@@ -41,7 +47,11 @@ This will call the function, then create a `test_response.txt` file containing a
 
 ## Tearing Down the Lambda
 
-- [ ] Tearing down with Pulumi
+To delete all resources run:
+
+```shell
+pulumi destroy
+```
 
 ## Sources
 
