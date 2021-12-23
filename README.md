@@ -14,6 +14,12 @@ The Python packages you'll need are:
 
 * [boto3](https://pypi.org/project/boto3/)
 
+You'll also need to set up you local AWS credentials to be able to deploy and test the Lambda. Use this to start the wizard to set up your default local credentials:
+
+```shell
+aws configure
+```
+
 - [ ] Any other Pulumi pre-requisites?
 
 ## Deployment
@@ -24,7 +30,7 @@ The Python packages you'll need are:
 
 Run the following command to send test data to the Lambda to check it is functioning
 
-```bash
+```shell
 aws lambda invoke --function-name bucket_writer --region eu-west-1 --payload '{\"key1\":\"value1\", \"key2\":\"value2\", \"key3\":\"value3\"}' --cli-binary-format raw-in-base64-out test_response.txt
 ```
 
